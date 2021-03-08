@@ -5,6 +5,9 @@ pipeline {
         }
     }
     stages {
+          stage('Clone repository') {
+        checkout scm
+    }
         stage('test') {
             steps {
                 script {
