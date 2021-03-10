@@ -23,3 +23,4 @@ resource azurerm_kubernetes_cluster "k8s_cluster" {
     enabled = false
   }
 }
+
