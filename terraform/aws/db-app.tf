@@ -6,6 +6,7 @@ resource "aws_db_instance" "default" {
   db_subnet_group_name   = aws_db_subnet_group.default.name
   vpc_security_group_ids = ["${aws_security_group.default.id}"]
 
+  
   identifier              = "rds-${local.resource_prefix.value}"
   engine_version          = "8.0" # Latest major version 
   instance_class          = "db.t3.micro"
@@ -20,6 +21,7 @@ resource "aws_db_instance" "default" {
   monitoring_interval     = 0
   publicly_accessible     = true
 
+ 
   tags = {
     Name        = "${local.resource_prefix.value}-rds"
     Environment = local.resource_prefix.value
