@@ -6,6 +6,7 @@ resource azurerm_kubernetes_cluster "k8s_cluster" {
   identity {
     type = "SystemAssigned"
   }
+  
   default_node_pool {
     name       = "default"
     vm_size    = "Standard_D2_v2"
