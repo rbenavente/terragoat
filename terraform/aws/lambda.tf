@@ -1,4 +1,6 @@
 resource "aws_iam_role" "iam_for_lambda" {
+  
+  
   name = "${local.resource_prefix.value}-analysis-lambda"
 
   assume_role_policy = <<EOF
