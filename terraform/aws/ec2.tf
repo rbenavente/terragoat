@@ -3,7 +3,7 @@ resource "aws_instance" "web_host" {
   ami           = "${var.ami}"
   instance_type = "t2.nano"
 
-  
+
   vpc_security_group_ids = [
   "${aws_security_group.web-node.id}"]
   subnet_id = "${aws_subnet.web_subnet.id}"
@@ -20,11 +20,11 @@ echo "<h1>Deployed via Terraform</h1>" | sudo tee /var/www/html/index.html
 EOF
   tags = {
     Name                 = "${local.resource_prefix.value}-ec2"
-    git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
+    git_commit           = "d39f98ffc33a295b0761bacc3229ce03028d7d37"
     git_file             = "terraform/aws/ec2.tf"
-    git_last_modified_at = "2020-06-16 14:46:24"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_last_modified_at = "2021-11-15 11:31:47"
+    git_last_modified_by = "63422736+rbenavente@users.noreply.github.com"
+    git_modifiers        = "63422736+rbenavente/nimrodkor"
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "0ca0efb4-41fa-42bf-8b44-21566e4a0be2"
