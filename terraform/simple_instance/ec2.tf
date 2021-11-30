@@ -1,7 +1,6 @@
 provider "aws" {
   region = "us-west-2"
 }
-
 resource "aws_security_group" "ssh_traffic" {
   name        = "ssh_traffic"
   description = "Allow SSH inbound traffic"
