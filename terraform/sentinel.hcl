@@ -1,4 +1,4 @@
 policy "bridgecrew" {
-    source            = "./terraform/bridgecrew.sentinel"
+    source            = "https://github.com/rbenavente/terragoat/edit/master/terraform/sentinel.hcl"
     enforcement_level = "hard-mandatory"
   }
