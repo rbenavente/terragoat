@@ -13,3 +13,4 @@ if (length(resp.violations) > 0) {
 }
 print("More details: " + resp.details_url)  
 main = rule { length(resp.violations) < 1 }
+
