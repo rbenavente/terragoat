@@ -1,6 +1,6 @@
 resource "aws_instance" "web_host" {
   # ec2 have plain text secrets in user data
-  
+
   ami           = "${var.ami}"
   instance_type = "t2.nano"
 
@@ -20,11 +20,11 @@ echo "<h1>Deployed via Terraform</h1>" | sudo tee /var/www/html/index.html
 EOF
   tags = {
     Name                 = "${local.resource_prefix.value}-ec2"
-    git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
+    git_commit           = "d23eaf2dbc6beef1538f5bebeb2d704c8b38da13"
     git_file             = "terraform/aws/ec2.tf"
-    git_last_modified_at = "2020-06-16 14:46:24"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_last_modified_at = "2022-02-11 19:00:17"
+    git_last_modified_by = "63422736+rbenavente@users.noreply.github.com"
+    git_modifiers        = "63422736+rbenavente/nimrodkor"
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "0ca0efb4-41fa-42bf-8b44-21566e4a0be2"
