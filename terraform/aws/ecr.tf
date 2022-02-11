@@ -2,6 +2,7 @@ resource aws_ecr_repository "repository" {
   name                 = "${local.resource_prefix.value}-repository"
   image_tag_mutability = "MUTABLE"
 
+  
   tags = {
     Name                 = "${local.resource_prefix.value}-repository"
     git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
