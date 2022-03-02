@@ -3,8 +3,6 @@ locals {
     value = "${local.resource_prefix.value}-eks"
   }
 }
-
-
 data aws_iam_policy_document "iam_policy_eks" {
   statement {
     effect  = "Allow"
