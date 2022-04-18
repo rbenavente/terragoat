@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-west-2"
+  region = "eu-centrall-1"
 }
 resource "aws_security_group" "ssh_traffic" {
   name        = "ssh_traffic"
