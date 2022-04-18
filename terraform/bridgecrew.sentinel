@@ -1,7 +1,7 @@
 import "http"
 import "json"
 false
-req = http.request("https://www.bridgecrew.cloud/api/v1/tfCloud/sentinel/ws-Pwr6s4Xu7bMw3cWV").with_header("Authorization", "b26df5fc-c2de-4058-8ecc-9cbfd54897c1")
+req = http.request("https://www.bridgecrew.cloud/api/v1/tfCloud/sentinel/ws-Pwr6s4Xu7bMw3cWV").with_header("Authorization", "cd9efbf3-e616-424e-bb2f-2514c3b6cc45")
 resp = json.unmarshal(http.get(req).body)
 if (length(resp.violations) > 0) {
     print("Violations:\n")
