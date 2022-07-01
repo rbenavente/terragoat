@@ -1,37 +1,63 @@
-data "alicloud_images" "ubuntu" {
-  most_recent = true
-  name_regex  = "^ubuntu_18.*64"
+variable "name" {
+  default = "auto_provisioning_group"
 }
 
-module "ecs_cluster" {
-  source = "alibaba/ecs-instance/alicloud"
+# Create a new ECS instance for a VPC
+resource "alicloud_security_group" "group" {
+  name        = "tf_test_foo"
+  description = "foo"
+  vpc_id      = alicloud_vpc.vpc.id
+}
 
-  number_of_instances = 5
+resource "alicloud_kms_key" "key" {
+  description            = "Hello KMS"
+  pending_window_in_days = "7"
+  key_state              = "Enabled"
+}
 
-  name                        = "my-ecs-cluster"
-  use_num_suffix              = true
-  image_id                    = data.alicloud_images.ubuntu.ids.0
-  instance_type               = "ecs.sn1ne.large"
-  vswitch_id                  = "vsw-fhuqie"
-  security_group_ids          = ["sg-12345678"]
-  associate_public_ip_address = true
-  internet_max_bandwidth_out  = 10
+data "alicloud_zones" "default" {
+  available_disk_category     = "cloud_efficiency"
+  available_resource_creation = "VSwitch"
+}
 
-  key_name = "for-ecs-cluster"
+# Create a new ECS instance for VPC
+resource "alicloud_vpc" "vpc" {
+  name       = var.name
+  cidr_block = "172.16.0.0/16"
+}
 
-  system_disk_category = "cloud_ssd"
-  system_disk_size     = 50
+resource "alicloud_vswitch" "vswitch" {
+  vpc_id            = alicloud_vpc.vpc.id
+  cidr_block        = "172.16.0.0/24"
+  zone_id           = data.alicloud_zones.default.zones[0].id
+  vswitch_name      = var.name
+}
 
-  tags = {
-    Created              = "Terraform"
-    Environment          = "dev"
-    git_commit           = "2ceb6bc34b43a5b078bf8c6ec64964c10aca8d18"
-    git_file             = "terraform/alibaba/ecs.tf"
-    git_last_modified_at = "2022-07-01 16:41:41"
-    git_last_modified_by = "63422736+rbenavente@users.noreply.github.com"
-    git_modifiers        = "63422736+rbenavente"
-    git_org              = "rbenavente"
-    git_repo             = "terragoat"
-    yor_trace            = "72ad16b3-55a3-4493-814f-2cf0a8277f28"
+resource "alicloud_slb_load_balancer" "slb" {
+  load_balancer_name       = "test-slb-tf"
+  vswitch_id = alicloud_vswitch.vswitch.id
+}
+
+resource "alicloud_instance" "instance" {
+  # cn-beijing
+  availability_zone = "cn-beijing-b"
+  security_groups   = alicloud_security_group.group.*.id
+
+  # series III
+  instance_type              = "ecs.n4.large"
+  system_disk_category       = "cloud_efficiency"
+  system_disk_name           = "test_foo_system_disk_name"
+  system_disk_description    = "test_foo_system_disk_description"
+  image_id                   = "ubuntu_18_04_64_20G_alibase_20190624.vhd"
+  instance_name              = "test_foo"
+  vswitch_id                 = alicloud_vswitch.vswitch.id
+  internet_max_bandwidth_out = 10
+  data_disks {
+    name        = "disk2"
+    size        = 20
+    category    = "cloud_efficiency"
+    description = "disk2"
+    encrypted   = true
+    kms_key_id  = alicloud_kms_key.key.id
   }
 }
