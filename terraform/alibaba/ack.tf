@@ -8,6 +8,8 @@ variable "k8s_name_prefix" {
   description = "The name prefix used to create managed kubernetes cluster."
   default     = "tf-ack-shenzhen"
 }
+
+
 resource "random_uuid" "this" {}
 # The default resource names. 
 locals {
