@@ -23,7 +23,7 @@ resource "alicloud_kms_key" "key" {
   description            = "Hello KMS"
   pending_window_in_days = "7"
   key_state              = "Enabled"
-  automatic_rotation = "Enabled"
+  automatic_rotation     = "Enabled"
 }
 
 data "alicloud_zones" "default" {
