@@ -45,6 +45,7 @@ resource "alicloud_vpc" "default" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "2910f839-7517-4ea4-9b80-c1a44a0c453b"
+    yor_name             = "default"
   }
 }
 # The node vSwitch. 
@@ -62,6 +63,7 @@ resource "alicloud_vswitch" "vswitches" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "8e319f18-98ef-444f-a948-ed79edd39dc8"
+    yor_name             = "vswitches"
   }
 }
 
@@ -114,6 +116,7 @@ resource "alicloud_cs_managed_kubernetes" "flannel" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "d426fd37-6030-41f4-b947-0868a83e4c3b"
+    yor_name             = "flannel"
   }
 }
 
@@ -173,5 +176,6 @@ resource "alicloud_cs_kubernetes_node_pool" "flannel" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "9fe4599c-1f60-4d97-8d4c-c69396a4ef47"
+    yor_name             = "flannel"
   }
 }

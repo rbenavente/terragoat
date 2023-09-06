@@ -16,6 +16,7 @@ resource "aws_neptune_cluster" "default" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "c8b14b00-66f2-47ad-b748-5c297c36f500"
+    yor_name             = "default"
   }
 }
 
@@ -35,6 +36,7 @@ resource "aws_neptune_cluster_instance" "default" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "256cef5c-59d8-4f21-837d-aaddeda86cdd"
+    yor_name             = "default"
   }
 }
 

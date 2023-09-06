@@ -17,6 +17,7 @@ resource "azurerm_managed_disk" "example" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "cdb564be-7223-4cc7-85c4-52c04b27259c"
+    yor_name             = "example"
   }
 }
 
@@ -56,6 +57,7 @@ resource "azurerm_storage_account" "example" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "8cba6820-6750-47ca-8914-3c23e6477660"
+    yor_name             = "example"
   }
 }
 
