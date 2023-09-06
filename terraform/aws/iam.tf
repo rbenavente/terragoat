@@ -13,6 +13,7 @@ resource "aws_iam_user" "user" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "3be924f6-51a8-46c5-951c-a280e7564a3a"
+    yor_name             = "user"
   }
 
 }

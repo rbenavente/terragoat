@@ -16,6 +16,7 @@ resource azurerm_app_service_plan "example" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "881d1ffe-fd64-4b5d-a564-7ba6cae72a62"
+    yor_name             = "example"
   }
 }
 
@@ -37,6 +38,7 @@ resource azurerm_app_service "app-service1" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "8e9da915-97b3-4f83-b9f8-d1d00ce3c3d1"
+    yor_name             = "app-service1"
   }
 }
 
@@ -59,6 +61,7 @@ resource azurerm_app_service "app-service2" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "b822228f-a899-497e-9c2b-fc5d1219d8d0"
+    yor_name             = "app-service2"
   }
 }
 

@@ -10,5 +10,6 @@ resource "azurerm_resource_group" "example" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "4b32188a-0baf-4570-adb1-5fe92b5e838d"
+    yor_name             = "example"
   }
 }

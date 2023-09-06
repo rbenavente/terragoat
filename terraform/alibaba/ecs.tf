@@ -16,6 +16,7 @@ resource "alicloud_security_group" "group" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "1ba6e2ed-7567-4b18-8f01-42560d6a6b2c"
+    yor_name             = "group"
   }
 }
 
@@ -23,6 +24,17 @@ resource "alicloud_kms_key" "key" {
   description            = "Hello KMS"
   pending_window_in_days = "7"
   key_state              = "Enabled"
+  tags = {
+    git_commit           = "160ec5d93cbb125b02c39c92c3369d2ecc26107f"
+    git_file             = "terraform/alibaba/ecs.tf"
+    git_last_modified_at = "2022-07-01 17:03:39"
+    git_last_modified_by = "63422736+rbenavente@users.noreply.github.com"
+    git_modifiers        = "63422736+rbenavente"
+    git_org              = "rbenavente"
+    git_repo             = "terragoat"
+    yor_name             = "key"
+    yor_trace            = "63ba3438-07bc-4b11-9f67-75cb3b3d32b7"
+  }
 }
 
 data "alicloud_zones" "default" {
@@ -43,6 +55,7 @@ resource "alicloud_vpc" "vpc" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "19f1dd69-af98-459f-bd48-e7f021ebe328"
+    yor_name             = "vpc"
   }
 }
 
@@ -60,6 +73,7 @@ resource "alicloud_vswitch" "vswitch" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "3bb095c0-622e-4ae3-bd43-665dedc487ad"
+    yor_name             = "vswitch"
   }
 }
 
@@ -75,6 +89,7 @@ resource "alicloud_slb_load_balancer" "slb" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "494d90ac-0fc8-4b74-b3a2-14d847a33703"
+    yor_name             = "slb"
   }
 }
 
@@ -109,5 +124,6 @@ resource "alicloud_instance" "instance" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "002128aa-6ee6-47df-974b-4e0d734e0144"
+    yor_name             = "instance"
   }
 }

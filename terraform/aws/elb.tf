@@ -35,5 +35,6 @@ resource "aws_elb" "weblb" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "0387402b-925c-4831-9774-4a3e6a13f13c"
+    yor_name             = "weblb"
   }
 }
