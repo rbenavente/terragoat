@@ -30,6 +30,7 @@ resource google_compute_instance "server" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "fd35fa12-52fa-496a-9cdf-878fce0ea22c"
+    yor_name             = "server"
   }
 }
 
@@ -44,5 +45,6 @@ resource google_compute_disk "unencrypted_disk" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "3c537f26-f518-4cfe-97f7-7f71aab37a8a"
+    yor_name             = "unencrypted_disk"
   }
 }

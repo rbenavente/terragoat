@@ -33,5 +33,6 @@ resource google_bigquery_dataset "dataset" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "4a0e7a57-3529-4e10-8ff0-0bd331877f5f"
+    yor_name             = "dataset"
   }
 }

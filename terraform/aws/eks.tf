@@ -28,6 +28,7 @@ resource aws_iam_role "iam_for_eks" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "c766506f-46dc-4339-a512-a02b8d53f20a"
+    yor_name             = "iam_for_eks"
   }
 }
 
@@ -55,6 +56,7 @@ resource aws_vpc "eks_vpc" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "e56e2be6-095e-4964-9fff-e5391e481107"
+    yor_name             = "eks_vpc"
   }
 }
 
@@ -74,6 +76,7 @@ resource aws_subnet "eks_subnet1" {
     git_org                                         = "rbenavente"
     git_repo                                        = "terragoat"
     yor_trace                                       = "550da896-2dfe-4e00-9e5b-04125c0ab89c"
+    yor_name                                        = "eks_subnet1"
   }
 }
 
@@ -93,6 +96,7 @@ resource aws_subnet "eks_subnet2" {
     git_org                                         = "rbenavente"
     git_repo                                        = "terragoat"
     yor_trace                                       = "33e63efb-607c-4f83-8c0f-440207c9e511"
+    yor_name                                        = "eks_subnet2"
   }
 }
 
@@ -118,6 +122,7 @@ resource aws_eks_cluster "eks_cluster" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "b92704a6-4d30-4dc1-bb89-591ca4ff7567"
+    yor_name             = "eks_cluster"
   }
 }
 

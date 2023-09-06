@@ -31,5 +31,6 @@ resource azurerm_kubernetes_cluster "k8s_cluster" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "dd783daa-8fcf-419f-8aa1-bf772da74086"
+    yor_name             = "k8s_cluster"
   }
 }

@@ -12,6 +12,7 @@ resource aws_ecr_repository "repository" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "398733fe-8aa9-453c-b719-7b5958f8bb4b"
+    yor_name             = "repository"
   }
 }
 
