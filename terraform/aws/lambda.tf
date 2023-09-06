@@ -25,6 +25,7 @@ EOF
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "f8024ba3-21b2-407a-b562-f34e4835d266"
+    yor_name             = "iam_for_lambda"
   }
 }
 
@@ -54,5 +55,6 @@ resource "aws_lambda_function" "analysis_lambda" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "86224719-c100-478c-9bc8-e9659c76c372"
+    yor_name             = "analysis_lambda"
   }
 }

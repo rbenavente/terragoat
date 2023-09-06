@@ -12,6 +12,7 @@ resource "azurerm_virtual_network" "example" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "6faa8710-e88a-4cc2-a496-d05d821e6a0b"
+    yor_name             = "example"
   }
 }
 
@@ -41,6 +42,7 @@ resource "azurerm_network_interface" "ni_linux" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "c6427db5-751f-4403-bb22-cbb83fe504b5"
+    yor_name             = "ni_linux"
   }
 }
 
@@ -63,6 +65,7 @@ resource "azurerm_network_interface" "ni_win" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "95be5e44-97b4-4401-8447-aa52154ab456"
+    yor_name             = "ni_win"
   }
 }
 
@@ -103,6 +106,7 @@ resource azurerm_network_security_group "bad_sg" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "1551d744-31ce-4c11-89cc-8f76a5d55aec"
+    yor_name             = "bad_sg"
   }
 }
 
@@ -119,6 +123,7 @@ resource azurerm_network_watcher "network_watcher" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "0b562fc9-e27b-4f8d-8de3-fa14020a1aba"
+    yor_name             = "network_watcher"
   }
 }
 
@@ -141,5 +146,6 @@ resource azurerm_network_watcher_flow_log "flow_log" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "8be0b9b3-905b-4ef0-a95c-935d4a826e56"
+    yor_name             = "flow_log"
   }
 }
