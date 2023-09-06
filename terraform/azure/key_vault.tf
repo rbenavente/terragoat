@@ -26,6 +26,7 @@ resource "azurerm_key_vault" "example" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "de205f50-10e9-4540-8a21-7da6cefc6d92"
+    yor_name             = "example"
   }
 }
 
@@ -51,6 +52,7 @@ resource "azurerm_key_vault_key" "generated" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "44126755-19dc-468e-8aac-e00a91ed4f72"
+    yor_name             = "generated"
   }
 }
 
@@ -67,5 +69,6 @@ resource "azurerm_key_vault_secret" "secret" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "d50bf401-e03e-48cb-800b-8017ca5abdf1"
+    yor_name             = "secret"
   }
 }

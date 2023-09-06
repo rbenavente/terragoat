@@ -27,6 +27,7 @@ EOF
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "0ca0efb4-41fa-42bf-8b44-21566e4a0be2"
+    yor_name             = "web_host"
   }
 }
 
@@ -45,6 +46,7 @@ resource "aws_ebs_volume" "web_host_storage" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "25c88ad8-616a-4510-b4f5-e58d1a610700"
+    yor_name             = "web_host_storage"
   }
   encrypted = true
 }
@@ -63,6 +65,7 @@ resource "aws_ebs_snapshot" "example_snapshot" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "12771ffb-25a6-49d8-9607-6d47c7f9f059"
+    yor_name             = "example_snapshot"
   }
 }
 
@@ -109,6 +112,7 @@ resource "aws_security_group" "web-node" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "55d515b0-06b8-4314-8117-17dec5d81928"
+    yor_name             = "web-node"
   }
 }
 
@@ -126,6 +130,7 @@ resource "aws_vpc" "web_vpc" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "7e3ecd6e-7371-4bac-8409-29b4b6fc1bd8"
+    yor_name             = "web_vpc"
   }
 }
 
@@ -145,6 +150,7 @@ resource "aws_subnet" "web_subnet" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "2a8338cb-c20a-4355-aabe-c7a7764a6fb5"
+    yor_name             = "web_subnet"
   }
 }
 
@@ -164,6 +170,7 @@ resource "aws_subnet" "web_subnet2" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "8fc294fa-ce9c-4470-b2ff-16e1e822e680"
+    yor_name             = "web_subnet2"
   }
 }
 
@@ -181,6 +188,7 @@ resource "aws_internet_gateway" "web_igw" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "8e75af64-5868-4f89-b9da-861aa5f95825"
+    yor_name             = "web_igw"
   }
 }
 
@@ -197,6 +205,7 @@ resource "aws_route_table" "web_rtb" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "dbdcbd63-8666-4a51-afc4-841bde004cad"
+    yor_name             = "web_rtb"
   }
 }
 
@@ -235,6 +244,7 @@ resource "aws_network_interface" "web-eni" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "a11fb2ec-c4c2-4d47-9cab-cd08df8bb424"
+    yor_name             = "web-eni"
   }
 }
 
@@ -256,6 +266,7 @@ resource "aws_flow_log" "vpcflowlogs" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "b8f3f2ce-7627-417a-b0dc-66909caa8ce1"
+    yor_name             = "vpcflowlogs"
   }
 }
 
@@ -274,6 +285,7 @@ resource "aws_s3_bucket" "flowbucket" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "1c703c56-73b8-46d3-a1a3-91f47229c484"
+    yor_name             = "flowbucket"
   }
 }
 

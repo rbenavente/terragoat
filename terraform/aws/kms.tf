@@ -12,6 +12,7 @@ resource "aws_kms_key" "logs_key" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "88717af3-05d1-48f4-a8f7-a120a818f175"
+    yor_name             = "logs_key"
   }
 }
 

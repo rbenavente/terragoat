@@ -31,6 +31,7 @@ resource "aws_db_instance" "default" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "04636d9f-09fa-4168-b469-a9b75488144c"
+    yor_name             = "default"
   }
 
   # Ignore password changes from tf plan diff
@@ -56,6 +57,7 @@ resource "aws_db_option_group" "default" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "62635d69-71b9-4594-bb48-a70a1f1d8257"
+    yor_name             = "default"
   }
 }
 
@@ -87,6 +89,7 @@ resource "aws_db_parameter_group" "default" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "41ccae2d-1e67-4aa0-a7d6-b3ab1e31ad9a"
+    yor_name             = "default"
   }
 }
 
@@ -106,6 +109,7 @@ resource "aws_db_subnet_group" "default" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "9a05d460-8f6c-4052-a45d-221e4c0ba7de"
+    yor_name             = "default"
   }
 }
 
@@ -124,6 +128,7 @@ resource "aws_security_group" "default" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "3269557c-878f-471d-85f1-9b80145ac5ad"
+    yor_name             = "default"
   }
 }
 
@@ -159,6 +164,7 @@ resource "aws_iam_instance_profile" "ec2profile" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "cc5ebdc6-103a-4b6b-9dc9-811decc8e0d0"
+    yor_name             = "ec2profile"
   }
 }
 
@@ -193,6 +199,7 @@ EOF
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "9001bfd0-ed83-4a23-8de2-8f1398490d7f"
+    yor_name             = "ec2role"
   }
 }
 
@@ -401,6 +408,7 @@ EOF
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "21548182-c337-400c-ae1a-9af5f4ab97f1"
+    yor_name             = "db_app"
   }
 }
 
