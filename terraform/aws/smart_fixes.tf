@@ -139,4 +139,10 @@ resource "aws_cloudwatch_log_group" "example8" {
     git_repo             = "terragoat"
     yor_trace            = "5782abb9-7e27-4ffe-bdbb-13dcc6306e3a"
   }
+resource "aws_rds_cluster" "app1-rds-cluster" {
+  cluster_identifier      = "app1-rds-cluster"
+  allocated_storage       = 10
+  backup_retention_period = 0
+ 
+}
 }
