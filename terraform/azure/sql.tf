@@ -24,6 +24,7 @@ resource "azurerm_sql_server" "example" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "7a4dbced-8d62-40a9-8c20-159588e7199c"
+    yor_name             = "example"
   }
 }
 
@@ -66,6 +67,7 @@ resource "azurerm_mysql_server" "example" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "4d09a3f8-895c-4c31-9997-0b804714d263"
+    yor_name             = "example"
   }
 }
 
@@ -91,6 +93,7 @@ resource "azurerm_postgresql_server" "example" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "af44183f-946f-4868-90e6-9594412b1c03"
+    yor_name             = "example"
   }
 }
 

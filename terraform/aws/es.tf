@@ -23,6 +23,7 @@ resource "aws_elasticsearch_domain" "monitoring-framework" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "ef05b553-780c-4c27-ae2a-ca69a728db92"
+    yor_name             = "monitoring-framework"
   }
 }
 

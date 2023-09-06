@@ -21,6 +21,7 @@ resource "aws_security_group" "ssh_traffic" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "1fea1b20-ec93-46fe-8e7a-485a1b6fbef2"
+    yor_name             = "ssh_traffic"
   }
 }
 
@@ -38,6 +39,7 @@ resource "aws_instance" "web_server_instance" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "2b790d6d-94b8-42d0-a6c4-4953d67d593c"
+    yor_name             = "web_server_instance"
   }
 }
 

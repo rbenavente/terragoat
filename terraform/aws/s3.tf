@@ -19,6 +19,7 @@ resource "aws_s3_bucket" "data" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "d3523ec1-5db3-44ab-be09-e18fd8409478"
+    yor_name             = "data"
   }
 }
 
@@ -37,6 +38,7 @@ resource "aws_s3_bucket_object" "data_object" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "d8e1b50e-3dd2-4150-8928-46f86388c6d2"
+    yor_name             = "data_object"
   }
 }
 
@@ -58,6 +60,7 @@ resource "aws_s3_bucket" "financials" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "adb1aefb-878a-40de-8e23-5b66bf062ed2"
+    yor_name             = "financials"
   }
 
 }
@@ -82,6 +85,7 @@ resource "aws_s3_bucket" "operations" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "4fdc8872-5f1a-42d6-94d4-a3cdde170bfa"
+    yor_name             = "operations"
   }
 
 }
@@ -107,6 +111,7 @@ resource "aws_s3_bucket" "data_science" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "4afe3486-9993-4440-8efc-30800f77f018"
+    yor_name             = "data_science"
   }
 }
 
@@ -136,5 +141,6 @@ resource "aws_s3_bucket" "logs" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "022ae078-0625-49e9-a4fc-d3714fabb74a"
+    yor_name             = "logs"
   }
 }

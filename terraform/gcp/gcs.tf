@@ -10,6 +10,7 @@ resource "google_storage_bucket" "terragoat_website" {
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "b83eda19-cc7a-4dc8-80d3-1db6fad52b32"
+    yor_name             = "terragoat_website"
   }
 }
 
