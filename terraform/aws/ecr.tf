@@ -2,13 +2,14 @@ resource aws_ecr_repository "repository" {
   name                 = "${local.resource_prefix.value}-repository"
   image_tag_mutability = "MUTABLE"
 
+
   tags = {
     Name                 = "${local.resource_prefix.value}-repository"
-    git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
+    git_commit           = "20eecc36a3804ef1c8f986299efef099af90f88e"
     git_file             = "terraform/aws/ecr.tf"
-    git_last_modified_at = "2020-06-16 14:46:24"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_last_modified_at = "2022-02-11 19:53:38"
+    git_last_modified_by = "63422736+rbenavente@users.noreply.github.com"
+    git_modifiers        = "63422736+rbenavente/nimrodkor"
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "398733fe-8aa9-453c-b719-7b5958f8bb4b"
