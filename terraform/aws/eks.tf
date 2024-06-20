@@ -1,3 +1,4 @@
+
 locals {
   eks_name = {
     value = "${local.resource_prefix.value}-eks"
