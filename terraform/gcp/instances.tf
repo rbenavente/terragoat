@@ -10,6 +10,7 @@ resource google_compute_instance "server" {
     }
     auto_delete = true
   }
+
   network_interface {
     subnetwork = google_compute_subnetwork.public-subnetwork.name
     access_config {}
@@ -22,11 +23,11 @@ resource google_compute_instance "server" {
     serial-port-enable     = true
   }
   labels = {
-    git_commit           = "37914a45800114d263c0dcd74b81b9dd01307e13"
+    git_commit           = "51745cf955fd5da3697c1238e77c4542fc62b95d"
     git_file             = "terraform__gcp__instances_tf"
-    git_last_modified_at = "2020-07-09-13-43-30"
-    git_last_modified_by = "nimrodkor"
-    git_modifiers        = "nimrodkor"
+    git_last_modified_at = "2024-08-08-18-00-30"
+    git_last_modified_by = "63422736rbenavente"
+    git_modifiers        = "63422736rbenavente"
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "fd35fa12-52fa-496a-9cdf-878fce0ea22c"

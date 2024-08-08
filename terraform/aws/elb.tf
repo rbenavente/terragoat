@@ -31,7 +31,7 @@ resource "aws_elb" "weblb" {
     git_file             = "terraform/aws/elb.tf"
     git_last_modified_at = "2020-06-16 14:46:24"
     git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_modifiers        = "nimrodkor/orshapira"
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "0387402b-925c-4831-9774-4a3e6a13f13c"
