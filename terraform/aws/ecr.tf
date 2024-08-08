@@ -8,7 +8,7 @@ resource aws_ecr_repository "repository" {
     git_file             = "terraform/aws/ecr.tf"
     git_last_modified_at = "2020-06-16 14:46:24"
     git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_modifiers        = "nimrodkor/rotemavn"
     git_org              = "rbenavente"
     git_repo             = "terragoat"
     yor_trace            = "398733fe-8aa9-453c-b719-7b5958f8bb4b"
