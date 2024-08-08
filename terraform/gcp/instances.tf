@@ -10,6 +10,7 @@ resource google_compute_instance "server" {
     }
     auto_delete = true
   }
+
   network_interface {
     subnetwork = google_compute_subnetwork.public-subnetwork.name
     access_config {}
